@@ -1,0 +1,8 @@
+
+<div style="font-size: 70%;" *ngFor="let user of users">
+  Email: {{user?.email}}<br>
+  Name: {{user?.name}}<br>
+  Image:  <img [src]="user.image" width="10%" height="10%"><br>
+  Change Image: <input type="file" (change)="fileChange($event)"/><br>
+  ---------------------------------------------<br>
+</div>
